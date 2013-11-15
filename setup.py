@@ -87,6 +87,9 @@ except ImportError: # compatibility with Astropy 0.2 - can be removed in cases
     # A dictionary to keep track of extra packagedir mappings
     package_info['package_dir'] = {}
 
+    # Wrapper script
+    package_info['scripts'] = ['scripts/montage.py']
+
     # Update extensions, package_data, packagenames and package_dirs from
     # any sub-packages that define their own extension modules and package
     # data.  See the docstring for setup_helpers.update_package_files for
